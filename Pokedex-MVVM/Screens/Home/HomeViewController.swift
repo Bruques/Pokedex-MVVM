@@ -16,13 +16,15 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         self.view = homeView
+        
+        setupTableView()
     }
 
 
 }
 
 extension HomeViewController {
-    private func configureTableView() {
+    private func setupTableView() {
         homeView.pokedexNamesTableView.dataSource = self
     }
 }
@@ -33,7 +35,9 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: PokedexTableViewCell.identifier, for: indexPath) as! PokedexTableViewCell
+        
+        return cell
     }
     
     

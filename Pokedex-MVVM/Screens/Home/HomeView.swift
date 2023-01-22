@@ -22,6 +22,7 @@ class HomeView: UIView {
     lazy var pokedexNamesTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.register(PokedexTableViewCell.self, forCellReuseIdentifier: PokedexTableViewCell.identifier)
         return tableView
     }()
     
