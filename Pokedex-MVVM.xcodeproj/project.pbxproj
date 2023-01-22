@@ -12,6 +12,7 @@
 		0EE8EAB9297DB19F0022BE05 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8EAB8297DB19F0022BE05 /* HomeViewController.swift */; };
 		0EE8EABE297DB19F0022BE05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE8EABD297DB19F0022BE05 /* Assets.xcassets */; };
 		0EE8EAC1297DB19F0022BE05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE8EABF297DB19F0022BE05 /* LaunchScreen.storyboard */; };
+		0EE8EACE297DB3E20022BE05 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8EACD297DB3E20022BE05 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0EE8EABD297DB19F0022BE05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EE8EAC0297DB19F0022BE05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EE8EAC2297DB19F0022BE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EE8EACD297DB3E20022BE05 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		0EE8EAB3297DB19F0022BE05 /* Pokedex-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				0EE8EACA297DB3950022BE05 /* Network */,
+				0EE8EAC9297DB38D0022BE05 /* Models */,
+				0EE8EAC8297DB3860022BE05 /* Screens */,
 				0EE8EAB4297DB19F0022BE05 /* AppDelegate.swift */,
 				0EE8EAB6297DB19F0022BE05 /* SceneDelegate.swift */,
-				0EE8EAB8297DB19F0022BE05 /* HomeViewController.swift */,
 				0EE8EABD297DB19F0022BE05 /* Assets.xcassets */,
 				0EE8EABF297DB19F0022BE05 /* LaunchScreen.storyboard */,
 				0EE8EAC2297DB19F0022BE05 /* Info.plist */,
 			);
 			path = "Pokedex-MVVM";
+			sourceTree = "<group>";
+		};
+		0EE8EAC8297DB3860022BE05 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0EE8EACB297DB3B60022BE05 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0EE8EAC9297DB38D0022BE05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0EE8EACA297DB3950022BE05 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0EE8EACB297DB3B60022BE05 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0EE8EAB8297DB19F0022BE05 /* HomeViewController.swift */,
+				0EE8EACD297DB3E20022BE05 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE8EAB9297DB19F0022BE05 /* HomeViewController.swift in Sources */,
+				0EE8EACE297DB3E20022BE05 /* HomeView.swift in Sources */,
 				0EE8EAB5297DB19F0022BE05 /* AppDelegate.swift in Sources */,
 				0EE8EAB7297DB19F0022BE05 /* SceneDelegate.swift in Sources */,
 			);
